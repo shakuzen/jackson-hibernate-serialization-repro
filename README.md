@@ -1,7 +1,7 @@
 Serialization issue reproduction
 ========
 
-The JUnit test contained in `JacksonHibernateProxyReproApplicationTests` reproduces the issue. This may be the same issue described in FasterXML/jackson-datatype-hibernate#77 or [this mentioned StackOverflow question](http://stackoverflow.com/questions/42395831/issue-serializing-lazy-manytoone).
+The JUnit test contained in `JacksonHibernateProxyReproApplicationTests` reproduces the issue. This may be the same issue described in [FasterXML/jackson-datatype-hibernate#77](https://github.com/FasterXML/jackson-datatype-hibernate/issues/77) or [this mentioned StackOverflow question](http://stackoverflow.com/questions/42395831/issue-serializing-lazy-manytoone).
 
 When using Hibernate with Spring Data REST, Hibernate proxies of entities will not be serialized properly.
 
