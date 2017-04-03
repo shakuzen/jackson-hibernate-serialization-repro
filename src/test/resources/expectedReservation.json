@@ -1,0 +1,26 @@
+{
+	"items": [
+		{
+			"itemDetails": [
+				{
+					"extras": [
+						{
+							"type": "something"
+						}
+					],
+					"status": "reserved"
+				}
+			],
+			"something": "something"
+		}
+	],
+	"something": "something",
+	"_links": {
+		"self": {
+			"href": "http://localhost:8080/reservations/9d0bab3c-8801-43b2-a15e-d7d6bfc08116"
+		},
+		"reservation": {
+			"href": "http://localhost:8080/reservations/9d0bab3c-8801-43b2-a15e-d7d6bfc08116"
+		}
+	}
+}
