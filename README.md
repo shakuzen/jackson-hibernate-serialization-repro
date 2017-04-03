@@ -1,12 +1,12 @@
 Serialization issue reproduction
 ========
 
-The JUnit test contained in `JacksonHibernateProxyReproApplicationTests` reproduces the issue.
+The JUnit test contained in `JacksonHibernateProxyReproApplicationTests` reproduces the issue. This may be the same issue described in FasterXML/jackson-datatype-hibernate#77 or [this mentioned StackOverflow question](http://stackoverflow.com/questions/42395831/issue-serializing-lazy-manytoone).
 
 When using Hibernate with Spring Data REST, Hibernate proxies of entities will not be serialized properly.
 
 The `PersistentEntityJackson2Module` will wrap entities in a `org.springframework.hateoas.Resource` class.
-When the `Resource`'s `content` field contains a Hibernate proxy, is serialized even though it should be
+When the `Resource`'s `content` field contains a Hibernate proxy, it is serialized even though it should be
 unwrapped as it is marked with `@JsonUnwrapped`.
 
 Expected serialization:
